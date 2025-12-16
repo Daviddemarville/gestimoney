@@ -8,12 +8,6 @@ export default function TabLayout() {
         headerShown: false,
       }}
     >
-      <Tabs.Screen
-        name="settings"
-        options={{
-          title: "Paramètres",
-        }}
-      />
       
       <Tabs.Screen
         name="index"
@@ -26,6 +20,13 @@ export default function TabLayout() {
         name="history"
         options={{
           title: "Historique",
+        }}
+      />
+
+      <Tabs.Screen
+        name="settings"
+        options={{
+          title: "Paramètres",
         }}
       />
 
