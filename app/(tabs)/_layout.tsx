@@ -9,11 +9,26 @@ export default function TabLayout() {
       }}
     >
       <Tabs.Screen
+        name="settings"
+        options={{
+          title: "Paramètres",
+        }}
+      />
+      
+      <Tabs.Screen
         name="index"
         options={{
           title: "Accueil",
         }}
       />
+
+      <Tabs.Screen
+        name="history"
+        options={{
+          title: "Historique",
+        }}
+      />
+
     </Tabs>
   );
 }

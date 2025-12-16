@@ -6,9 +6,9 @@ import { ScreenContent } from "@/components/ScreenContent";
 export default function HomeScreen() {
   return (
     <Screen>
-      <ScreenTitle>GestiMoney – Dashboard</ScreenTitle>
+      <ScreenTitle>GestiMoney – Historique</ScreenTitle>
       <ScreenContent>
-        <Text>Contenu du dashboard ici</Text>
+        <Text>Contenu du historique ici</Text>
       </ScreenContent>
     </Screen>
   );
