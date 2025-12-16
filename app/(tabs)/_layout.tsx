@@ -14,6 +14,20 @@ export default function TabLayout() {
           title: "Accueil",
         }}
       />
+
+      <Tabs.Screen
+        name="history"
+        options={{
+          title: "Historique",
+        }}
+      />
+
+      <Tabs.Screen
+        name="settings"
+        options={{
+          title: "Paramètres",
+        }}
+      />
     </Tabs>
   );
 }

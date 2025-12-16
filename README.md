@@ -68,13 +68,17 @@ React Native
 
 Expo Router
 
-NativeWind (Tailwind pour RN)
-
 React Native Reanimated
+
+StyleSheet (React Native)
 
 Supabase (auth + base de données, phase ultérieure)
 
-Le socle technique est volontairement figé pour garantir la stabilité.
+⚠️ Note importante
+NativeWind / Tailwind CSS ont été volontairement écartés dès le début du projet en raison d’incompatibilités avec la stack Expo SDK 54 + React 19.
+Le choix s’est porté sur StyleSheet, solution native, stable et pérenne, afin de garantir une base technique saine et maintenable sur le long terme.
+
+Le socle technique est volontairement figé à ce stade pour garantir la stabilité et éviter toute dette liée à des dépendances expérimentales.
 
 🗂️ Organisation du projet
 app/            → écrans et navigation (Expo Router)

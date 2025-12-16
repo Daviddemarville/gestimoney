@@ -1,10 +1,10 @@
 import { View, Text, StyleSheet } from "react-native";
 
-export default function HomeScreen() {
+export default function HistoryScreen() {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>
-        GestiMoney – Dashboard
+        GestiMoney – Historique
       </Text>
     </View>
   );
