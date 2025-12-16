@@ -8,7 +8,7 @@ export default function HomeScreen() {
     <Screen>
       <ScreenTitle>GestiMoney – Dashboard</ScreenTitle>
       <ScreenContent>
-        <Text>Contenu du dashboard ici</Text>
+        <Text>Contenu du dashboard ici.</Text>
       </ScreenContent>
     </Screen>
   );
