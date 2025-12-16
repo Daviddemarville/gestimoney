@@ -1,21 +1,17 @@
-import { View, Text, StyleSheet } from "react-native";
+import { Text, StyleSheet } from "react-native";
+import { Screen } from "@/components/Screen";
 
-export default function HistoryScreen() {
+export default function HomeScreen() {
   return (
-    <View style={styles.container}>
+    <Screen>
       <Text style={styles.title}>
         GestiMoney – Historique
       </Text>
-    </View>
+    </Screen>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: "center",
-    justifyContent: "center",
-  },
   title: {
     fontSize: 18,
     fontWeight: "600",
