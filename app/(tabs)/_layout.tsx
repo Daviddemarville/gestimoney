@@ -9,6 +9,13 @@ export default function TabLayout() {
       }}
     >
       <Tabs.Screen
+        name="settings"
+        options={{
+          title: "Paramètres",
+        }}
+      />
+      
+      <Tabs.Screen
         name="index"
         options={{
           title: "Accueil",
@@ -22,12 +29,6 @@ export default function TabLayout() {
         }}
       />
 
-      <Tabs.Screen
-        name="settings"
-        options={{
-          title: "Paramètres",
-        }}
-      />
     </Tabs>
   );
 }
