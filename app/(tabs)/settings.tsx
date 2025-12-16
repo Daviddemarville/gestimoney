@@ -1,19 +1,10 @@
-import { Text, StyleSheet } from "react-native";
 import { Screen } from "@/components/Screen";
+import { ScreenTitle } from "@/components/ScreenTitle";
 
 export default function HomeScreen() {
   return (
     <Screen>
-      <Text style={styles.title}>
-        GestiMoney – Paramètres
-      </Text>
+      <ScreenTitle>GestiMoney – Paramètres</ScreenTitle>
     </Screen>
   );
 }
-
-const styles = StyleSheet.create({
-  title: {
-    fontSize: 18,
-    fontWeight: "600",
-  },
-});
