@@ -1,50 +1,129 @@
-# Welcome to your Expo app 👋
+📱 GestiMoney
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+GestiMoney est une application mobile de gestion de budget personnel, conçue pour être simple, apaisante et fiable, avec une approche centrée sur l’utilisateur et la durabilité du code.
 
-## Get started
+L’objectif du projet est de proposer une application :
 
-1. Install dependencies
+claire et non anxiogène malgré un sujet sensible (l’argent),
 
-   ```bash
-   npm install
-   ```
+utilisable au quotidien sans surcharge fonctionnelle,
 
-2. Start the app
+construite sur une base technique solide et maintenable.
 
-   ```bash
-   npx expo start
-   ```
+🎯 Vision du projet
 
-In the output, you'll find options to open the app in a
+GestiMoney permet à un utilisateur de :
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+suivre ses revenus et dépenses,
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+visualiser son solde et ses équilibres mensuels,
 
-## Get a fresh project
+gérer des récurrences (salaires, abonnements, charges),
 
-When you're ready, run:
+organiser son budget via des comptes, épargnes et enveloppes,
 
-```bash
-npm run reset-project
-```
+évoluer vers des fonctionnalités avancées (Premium) sans complexifier le MVP.
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Le projet est pensé comme la première brique d’un écosystème plus large (Gesti*).
 
-## Learn more
+🧠 Philosophie de développement
 
-To learn more about developing your project with Expo, look at the following resources:
+Le développement suit une méthode stricte visant à éviter la dette technique et la dérive fonctionnelle.
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+Principes clés
 
-## Join the community
+Clean code dès le départ
 
-Join our community of developers creating universal apps.
+Séparation stricte des responsabilités
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Composants petits et ciblés (≈ 200 lignes max)
+
+Commits atomiques (une intention par commit)
+
+Code durable et assumé, pas de bricolage jetable
+
+🔵 Méthode des 4 cercles
+
+Le projet respecte strictement la méthode suivante :
+
+Navigation & écrans
+Définition des écrans et des flux, sans logique métier.
+
+UI statique
+Construction de l’interface avec des données factices.
+
+Logique applicative
+Calculs, règles métier, comportements (sans backend).
+
+Backend & persistance
+Intégration Supabase, sécurité et synchronisation.
+
+👉 Il est interdit de sauter un cercle.
+
+🧱 Stack technique
+
+Expo (SDK 54)
+
+React Native
+
+Expo Router
+
+NativeWind (Tailwind pour RN)
+
+React Native Reanimated
+
+Supabase (auth + base de données, phase ultérieure)
+
+Le socle technique est volontairement figé pour garantir la stabilité.
+
+🗂️ Organisation du projet
+app/            → écrans et navigation (Expo Router)
+components/     → composants UI réutilisables
+hooks/          → logique transverse et métier
+constants/      → thèmes, couleurs, constantes
+assets/         → images et ressources statiques
+scripts/        → scripts de développement (outils internes)
+
+🔒 Gouvernance du code
+
+Code hébergé sur GitHub
+
+Branche main protégée
+
+Développement par branches courtes (feature/*, fix/*)
+
+Aucun commit direct sur main
+
+Toute décision structurante est documentée
+
+⚠️ Licence & droits d’utilisation
+🔐 Licence propriétaire — Tous droits réservés
+
+Ce projet est un logiciel propriétaire.
+
+Toute reproduction, distribution, modification, extraction ou réutilisation — totale ou partielle — du code source est strictement interdite, quel que soit le support ou le contexte, sans autorisation écrite préalable de l’auteur.
+
+Cela inclut notamment :
+
+la réutilisation de composants,
+
+la reprise de logique métier,
+
+la copie de structures, d’architectures ou de patterns spécifiques,
+
+l’usage commercial ou non commercial.
+
+Toute violation pourra donner lieu à des poursuites.
+
+👤 Auteur
+
+Projet conçu et développé par David De Marville.
+Tous droits réservés.
+
+📌 Statut du projet
+
+🚧 En cours de développement
+
+🎯 MVP en construction
+
+📱 Application mobile (Android / iOS)
