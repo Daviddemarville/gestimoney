@@ -1,0 +1,19 @@
+{
+  "overview": {
+    "title": "Vue d’ensemble",
+    "totalBalance": 1245,
+    "monthly": {
+      "income": 320,
+      "expense": 180
+    }
+  },
+  "chart": {
+    "title": "Répartition des dépenses",
+    "items": [
+      { "label": "Loyer", "value": 500, "color": "#4F46E5" },
+      { "label": "Courses", "value": 220, "color": "#22C55E" },
+      { "label": "Transport", "value": 120, "color": "#F59E0B" },
+      { "label": "Loisirs", "value": 90, "color": "#EF4444" }
+    ]
+  }
+}

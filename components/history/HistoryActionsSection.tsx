@@ -6,8 +6,7 @@ export function HistoryActionsSection() {
     <View style={styles.container}>
       <Text style={styles.title}>Actions</Text>
       <View style={styles.actions}>
-        <ActionShortcut />
-        <ActionShortcut />
+        <ActionShortcut />        
       </View>
     </View>
   );
