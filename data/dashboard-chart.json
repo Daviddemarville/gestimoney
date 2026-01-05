@@ -60,5 +60,20 @@
         "date": "2025-12-12"
       }
     ]
+  },
+
+
+  "settings": {
+    "account": {
+      "email": "user@email.com",
+      "createdAt": "2024-06-15",
+      "plan": "Gratuit",
+      "provider": "email"
+    },
+    "preferences": {
+      "currency": "EUR",
+      "theme": "Système",
+      "notifications": true
+    }
   }
 }
