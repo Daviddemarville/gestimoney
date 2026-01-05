@@ -1,15 +1,22 @@
 import { View, Text, StyleSheet, Pressable } from "react-native";
+import { Link } from "expo-router";
 
 export function ActionShortcut() {
   return (
     <View style={styles.container}>
-      <Pressable style={[styles.button, styles.expense]}>
-        <Text style={styles.buttonText}>+ Ajouter une dépense</Text>
-      </Pressable>
+      
+      <Link href={{ pathname: "/modal", params: { type: "expense" } }}>
+  <Pressable style={[styles.button, styles.expense]}>
+    <Text style={styles.buttonText}>+ Ajouter une dépense</Text>
+  </Pressable>
+</Link>
 
-      <Pressable style={[styles.button, styles.income]}>
-        <Text style={styles.buttonText}>+ Ajouter une recette</Text>
-      </Pressable>
+<Link href={{ pathname: "/modal", params: { type: "income" } }}>
+  <Pressable style={[styles.button, styles.income]}>
+    <Text style={styles.buttonText}>+ Ajouter une recette</Text>
+  </Pressable>
+</Link>
+
     </View>
   );
 }
